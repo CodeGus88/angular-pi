@@ -1,0 +1,8 @@
+<p>employe works!</p>
+<p>Empresa empleado: {{company.value}}</p>
+<!-- identificador #nombreId -->
+<label>Nombre de la empresa: </label>
+<input type="text" [value]="getCompany()" disabled>
+<br>
+<input type="text" #company placeholder="Empresa" [value]>
+<button id="btn" (click)="setCompany(company.value)">Submit</button>
